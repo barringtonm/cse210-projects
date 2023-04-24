@@ -3,39 +3,41 @@ using System;
 class Program
 {
     static void Main(string[] args)
+    
     {
-        Console.WriteLine("What is your grade percentage?" );
+        
+        Console.WriteLine("What is the magic number ==6 ?"   );
+        Console.WriteLine("What is your guess? "  );
         string userInput  = Console.ReadLine();
         int number  = int.Parse(userInput);
 
-        if  ( number >=90)
-        {       
-            Console.WriteLine("grade A-Pass");
-
-        }
-        else if (number>=80)
+        if  ( number == 4)
         {
-            Console.WriteLine("grade B-Pass");
+            Console.WriteLine("Higher");
         }
+            
 
-        else if (number>=70)
+        
+        else if (number > 6)
         {
-            Console.WriteLine("grade C-pass");
+            Console.WriteLine("Lower");
         }
 
-        else if (number>=60)
+        else if(number == 6)
         {
-            Console.WriteLine("grade D-Pass");
-
+            Console.WriteLine("You guess it");
         }
+        
+        
+            else
+            {
+                Console.WriteLine("Guess again");
+                
+            }
+        
+    }
 
-        else 
-        {
-            Console.WriteLine("grade F-Fail, keep working");
-        }
          
-
-    }       
  
         
 }
