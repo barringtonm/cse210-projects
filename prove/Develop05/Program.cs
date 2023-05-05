@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Welcome to the program!");
 
-        Console.Write("Please enter your name?   ");
+        Console.Write("Please enter your name? ");
         string name = Console.ReadLine();
 
         Console.Write("Please enter your favorite number:  42 ");
