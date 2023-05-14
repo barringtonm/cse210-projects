@@ -1,52 +1,66 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
    
     {
-        Random randomGenarator = new Random();
-        int magicNumber = randomGenerator.Next(1,11);
-
-        //Console.WriteLine("What is the macic number?");
-        //Console.WriteLine("What is the guess");
-        int magicNumber = int.Parse(Console.ReadLine());
         
-
-       // Random randomGenerator = new Random();
-       // int number = randomGenerator.Next(1,11);
-        
-        int guess  = 1;
+        List<int>numbers = new List<int>();
        
-       while (guess != magicNumber)
-       {
-        Console.Write("What is your guess");
-        guess = int.Parse(Console.ReadLine());
-
-        if (magicNumber > guess)
-        {
-            Console.WriteLine("Higher");
-        }
-
-        else if (magicNumber < guess)
+        int userNumber = -1;
+        while (userNumber !=0)
 
         {
-            Console.WriteLine("Lower");
+            Console.Write("Enter a number(0 to quit): ");
+
+            string userResponse = Console.ReadLine();
+
+            userNumber =int.Parse(userResponse);
+
+        
+            if (userNumber !=0)
+
+              {
+                numbers.Add(userNumber);
+              }
+
         }
+    
+           int sum = 0;
 
-        else
-        {
-            Console.WriteLine("You guessed it!");
-        }
+           foreach (int number in numbers)
+             {
+                sum += number;
+            }
 
-       }
+          Console.WriteLine($"The sum is: {sum}");
 
+
+          float average =((float)sum)/ numbers.Count;
+          
+          Console.WriteLine($"The max is");
+
+            int max = userNumbers[0];
+
+            for each (int number in numbers)
+            {
+         
+                if (number >max)
+
+                max = userNumber;
+            }
+        } 
+
+
+            Console.WriteLine($"The max is: {max} ");    
 
 
     }
 
 
 
-
-
+       
+       
 }
