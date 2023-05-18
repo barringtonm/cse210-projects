@@ -42,25 +42,19 @@ class Program
           
           Console.WriteLine($"The max is");
 
-            int max = userNumbers[0];
+            int max = int.MinValue;
 
-            for each (int number in numbers)
+            foreach(int number in numbers)
             {
          
                 if (number >max)
+                {
+                    max = number;
+                }
 
-                max = userNumber;
+                
             }
-        } 
-
-
-            Console.WriteLine($"The max is: {max} ");    
-
-
-    }
-
-
-
-       
-       
+            Console.WriteLine($"The max is: {max} "); 
+        }           
+             
 }
