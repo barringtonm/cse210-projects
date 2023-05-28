@@ -10,15 +10,15 @@ namespace DailyScripture
         private int endVerse;
     public Reference (string book, int chapter, int startVerse, int endVerse)   
     {
-        this.book =book;
+        this.book = book;
         this.chapter = chapter;
-        this.startVerse =startVerse;
+        this.startVerse = startVerse;
         this.endVerse = endVerse;
     }
 
         public override string ToString()
         {
-            if (startVerse ==endVerse)
+            if (startVerse == endVerse)
                 return $"{book} {chapter} : {startVerse}";
             else
                 return $"{book}  {chapter}; {startVerse}-{endVerse}";    
