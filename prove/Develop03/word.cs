@@ -1,7 +1,8 @@
 using System;
 
 namespace DailyScripture
-{   class Word
+{
+  class Word
     {
     public string  Text {get; }
         public bool IsHidden {get; private set; }
