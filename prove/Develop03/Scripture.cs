@@ -1,11 +1,11 @@
 using System;
 
-namespace DailyScripture
-{
-    private Reference reference;
-    private List<Word> words;
-    public Scripture(string book, int chapter, int verse, string text)
-        {
+
+
+    //private Reference reference;
+   // private List<Word> words;
+    //public Scripture(string book, int chapter, int verse, string text)
+    {
             Reference = new Reference(book, chapter, verse);
             Words = new List<Word>();
 
@@ -16,9 +16,9 @@ namespace DailyScripture
             
             }
 
-        }
+    }
 
-    public void Display()
+    //private void Display()
     {
         Console.WriteLine($"{reference} :");
         foreach (Word word in words)
@@ -27,7 +27,7 @@ namespace DailyScripture
         }
     }
 
-    public void HideRandomWord()
+    //public void HideRandomWord()
     {
         List<Word> visibleWords = GetVisibleWords();
         if (visibleWords.Count ==0)
@@ -38,7 +38,7 @@ namespace DailyScripture
         visibleWords[randomIndex].Hide();    
     }
 
-    private List<Word> GetvisibleWords() 
+   // private List<Word> GetvisibleWords() 
        
     {
         List <Word> visibleWords = new List<Word>();
@@ -53,4 +53,3 @@ namespace DailyScripture
 
 
 
-}
