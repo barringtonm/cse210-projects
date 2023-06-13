@@ -1,12 +1,10 @@
 using systems;
 //Derive class
-public class BreathingtingActivity : MindFulnessProgram
+public class BreathingtingActivity : Activity
 {
-    public BreathingtingActivity() :base("Breathing Activity", "This activity will help" +
-        " you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.")
-
+    public BreathingtingActivity() :base(" Breathing Activity","This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing. ") 
     {
-
+    
     }
 
     public override void Start()
@@ -16,13 +14,15 @@ public class BreathingtingActivity : MindFulnessProgram
         SetDuration();
         Console.WriteLine("Prepare to begin ...");
         Pause(3);
-        PerformActivity(BreathingtingActivity);
+        PerformActivity();
+        Console.WriteLine("Good job");
         Console.WriteLine($"You have completed {name} for {duration} seconds.");
         Pause(3);
     }
-    private void PerformBreathingActivity()
+    private void PerformActivity()
     {
         Console.WriteLine("Let's start breathing...");
+
         for (int i = 0; i < duration; i+= 2)
         {
             Console.WriteLine("Breathe in ...");

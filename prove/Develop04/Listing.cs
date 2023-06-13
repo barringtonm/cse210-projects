@@ -1,6 +1,6 @@
 using systems;
 //Derive class
-public class ListinggActivity:MinfulnessProgram
+public class ListinggActivity:Activity
 {
     private string[] prompts =
      {
@@ -10,10 +10,9 @@ public class ListinggActivity:MinfulnessProgram
         "When hsve you felt the Holy Ghost this month ?",
         "Who are some of your personal heroes?"
     };
-    public ListinggActivity() : base("Listing Activity","This activity will help you" +
-        " reflect on the good things in your life by having you list as many things as you can in a certain area.")
+    public ListinggActivity() : base(" Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.")
     {
-
+       
     }
     public override void Start()
     {
@@ -32,11 +31,13 @@ public class ListinggActivity:MinfulnessProgram
         Random random = new Random();
         int remainingSeconds = duration;
         int itemCount = 0;
+
         while (remainingSeconds > 0)
         {
             string prompt = prompts[random.Next(prompts.Length)];
             Console.WriteLine(prompt);
             ShowCountdown(5);
+
             Console.WriteLine("Start Listing items (press Enter after item, type 'done' to finish): ");
 
             string item = Console.ReadLine();

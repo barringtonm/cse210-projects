@@ -1,7 +1,8 @@
+using System.Runtime.CompilerServices;
 using systems;
 
 //Derive class
-public class ReflectionActivity : MindFulnessProgram
+public class ReflectionActivity :Activity
 {
     private string[] prompts =
     {
@@ -23,35 +24,36 @@ public class ReflectionActivity : MindFulnessProgram
         "How can you keep this experience in mind in the future?"
     };
 
-    public ReflectionActivity() : base("Reflection Activity,This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspect of your life.")
+    public ReflectionActivity():base(" Reflection Activity", "This activity will help you reflect on times in your\r\n        life when you have shown strength and resilience. This will help you recognize\r\n            the power you have and how you can use it in other aspect of your life.\r\n ") 
         {
+       
 
         }
-    
-       public override void Start()
+
+    public override void Start()
     {
         Console.WriteLine($"Starting {name}...");
         Console.WriteLine(description);
         SetDuration();
         Console.WriteLine("Get ready ...");
         Pause(3);
-        PerformActivity();
+        PerformActivity(this);
         Console.WriteLine("Good job!");
         console.WriteLine($"You have completd {name} for {duration} seconds.");
         Pause(3);
 
-    static void PerformActivity()
+     Private void PerformActivity()
         {
             Random random = new Random();
             int remainingSeconds = duration;
 
             while (remainingSeconds > 0) 
             {
-                string prompt = prompts[random.Next(propmts.Length)];
+                string prompt =prompts[random.Next(propmts.Length)];
                 Console.WriteLine(prompt);
                 ShowSpinner(3);
 
-                foreach (string question in questions)
+                foreach (string question in @this.questions)
                 {
                     Console.WriteLine(question);
                     ShowSpinner(3);
@@ -60,11 +62,6 @@ public class ReflectionActivity : MindFulnessProgram
             }
         
         }
-
-
-
     }
-
-
 
 }

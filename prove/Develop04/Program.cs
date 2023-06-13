@@ -6,11 +6,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 using System.Diagnostics;
 //Main Program
-class Program
+public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Mindfulness App!");
+        Console.WriteLine("Welcome to the Activity App!");
 
         while (true)
         {
@@ -23,6 +23,7 @@ class Program
             Console.Write("Enter your choice: ");
             string choice = Console.ReadLine();
 
+            Console.WriteLine();
 
             Activity activity;
 
@@ -38,7 +39,7 @@ class Program
                     activity = new ListingActivity();
                     break;
                     case "4":
-                    Console.WriteLine("Thank you for using the MindfulnesActivity App. Goodbye!");
+                    Console.WriteLine("Thank you for using the Activity App. Goodbye!");
                     return;
                     default:
                     Console.WriteLine("Invalid choice. Please try again.");

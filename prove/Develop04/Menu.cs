@@ -5,20 +5,20 @@ using System.Threading;
 //Base class
 
 
-public abstract class MindFulnessProgram
+public abstract class Activity 
 { protected string name;
     public string description;
     protected int duration;
 
 
-    public MindFulnessProgram(string name, string description)
+    public Activity (string name, string description)
     {
         this.name = name;
         this.description = description;
     }
 
-    public void start();
-
+    public abstract void Start();
+        
     protected void SetDuration()
     {
         Console.Write("Enter the duration in seconds: ");
