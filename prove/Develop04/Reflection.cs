@@ -1,6 +1,6 @@
-using System.Runtime.CompilerServices;
-using systems;
-
+using System;
+using system.Collections.Generic;
+using System.Threading;
 //Derive class
 public class ReflectionActivity :Activity
 {
@@ -24,7 +24,7 @@ public class ReflectionActivity :Activity
         "How can you keep this experience in mind in the future?"
     };
 
-    public ReflectionActivity():base(" Reflection Activity", "This activity will help you reflect on times in your\r\n        life when you have shown strength and resilience. This will help you recognize\r\n            the power you have and how you can use it in other aspect of your life.\r\n ") 
+    public ReflectionActivity():base(" Reflection Activity", "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspect of your life.\r\n ") 
         {
        
 
@@ -42,7 +42,7 @@ public class ReflectionActivity :Activity
         console.WriteLine($"You have completd {name} for {duration} seconds.");
         Pause(3);
 
-     Private void PerformActivity()
+     Private  PerformActivity()
         {
             Random random = new Random();
             int remainingSeconds = duration;

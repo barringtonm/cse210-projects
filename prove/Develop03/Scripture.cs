@@ -1,10 +1,10 @@
 using System;
 
 
-
-    //private Reference reference;
-   // private List<Word> words;
-    //public Scripture(string book, int chapter, int verse, string text)
+class Scripture
+    private Reference reference;
+    private List<Word> words;
+    public Scripture(string book, int chapter, int verse, string text)
     {
             Reference = new Reference(book, chapter, verse);
             Words = new List<Word>();

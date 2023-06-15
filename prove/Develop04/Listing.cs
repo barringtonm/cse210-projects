@@ -1,6 +1,8 @@
-using systems;
+using System;
+using System.Collections.Generic;
+using System.Threading;
 //Derive class
-public class ListinggActivity:Activity
+public class ListingActivity:Activity
 {
     private string[] prompts =
      {
@@ -10,7 +12,7 @@ public class ListinggActivity:Activity
         "When hsve you felt the Holy Ghost this month ?",
         "Who are some of your personal heroes?"
     };
-    public ListinggActivity() : base(" Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.")
+    public ListingActivity() : base(" Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.")
     {
        
     }

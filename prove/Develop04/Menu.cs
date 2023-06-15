@@ -3,10 +3,9 @@ using system.Collections.Generic;
 using System.Threading;
 
 //Base class
-
-
 public abstract class Activity 
-{ protected string name;
+{
+    protected string name;
     public string description;
     protected int duration;
 
@@ -40,6 +39,7 @@ public abstract class Activity
         DateTime endTime = DateTime.Now.AddSeconds(seconds);
         List<string> animationStrings = new List<string> { "|", "/", "-", "\\" };
         int animationIndex = 0;
+
         while (DateTime.Now < endTime)
         {
             string animation = animationStrings[animationIndex];
@@ -58,7 +58,5 @@ public abstract class Activity
         }
         Console.WriteLine();
     }
-
-
       
 }
