@@ -28,7 +28,7 @@ namespace DailyJournal
                 Console.WriteLine("E. Quit");
 
 
-                Console.Write("\nEnter your choice (1-5): ");
+                Console.Write("\nEnter your choice (A-E): ");
                 string choice = Console.ReadLine();
 
                 switch (choice)

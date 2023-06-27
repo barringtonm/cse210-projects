@@ -49,7 +49,7 @@ public class ListingActivity:Activity
                 item = Console.ReadLine();
             }
 
-            remaingSeconds -= 10;
+             remainingSeconds -= 10;
         }
 
         Console.WriteLine($"You listed {itemCount} items.");

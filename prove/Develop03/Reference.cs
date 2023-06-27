@@ -8,7 +8,7 @@ namespace DailyScripture
         private int chapter;
         private int startVerse;
         private int endVerse;
-        public Reference (string book, int chapter, int startVerse, int endVerse)   
+        public reference (string book, int chapter, int startVerse, int endVerse)   
         {
         this.book = book;
         this.chapter = chapter;
@@ -24,9 +24,6 @@ namespace DailyScripture
                 return $"{book}  {chapter}; {startVerse}-{endVerse}";    
 
            
-
-
-            
         }
 
     }

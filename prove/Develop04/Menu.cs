@@ -31,7 +31,7 @@ public abstract class Activity
             Console.Write(".");
             Thread.Sleep(1000);
         }
-        console.WriteLine();
+            Console.WriteLine();
     }
 
     protected void showSpinner(int seconds)
@@ -45,7 +45,7 @@ public abstract class Activity
             string animation = animationStrings[animationIndex];
             Console.Write(animation);
             Thread.Sleep(250);
-            console.Write("\b \b");
+            Console.Write("\b \b");
             animationIndex = (animationIndex + 1) % animationStrings.Count;
         }
     }
