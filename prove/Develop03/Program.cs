@@ -2,9 +2,12 @@ using System;
 namespace DailyScripture
 
 {
+    
+   class Program 
    
-    {
-        static void Main(string[] args) 
+   {
+
+         static void Main(string[] args) 
         {
             Scripture scripture = new Scripture("John", 17,3,"And this is life eternal, that they might know thee the only true God, and Jesus Christ,whom thou hast sent." );
             Console.Clear();
@@ -24,5 +27,19 @@ namespace DailyScripture
 
         }
     }
+
+
+
+
+
+
+
+
+
+
+}
+    
+       
+
 
 }

@@ -1,7 +1,6 @@
 using System;
-using system.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading;
-//Derive class
 public class ReflectionActivity :Activity
 {
     private string[] prompts =
@@ -42,7 +41,7 @@ public class ReflectionActivity :Activity
         console.WriteLine($"You have completd {name} for {duration} seconds.");
         Pause(3);
 
-     Private  PerformActivity()
+        Private  PerformActivity()
         {
             Random random = new Random();
             int remainingSeconds = duration;
