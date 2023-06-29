@@ -13,17 +13,28 @@ namespace DailyScripture
             Console.Clear();
             scripture.Display();
             Console.WriteLine("\nPress Enter to continue or type 'quit' to exit.");
+
             while (true)
             {
                 string input = Console.ReadLine();
                 if (input.ToLower() == "quit")
                     break;
 
-                scripture.HideRandomWord();
+                if (!scripture.HideRandomWord())
+                { 
+                               
+                Console.WriteLine("\nGood Job,keep studying!" );
+
+                    break;
+                }
                 Console.Clear();
                 scripture.Display();
-                Console.WriteLine("\nPress Enter to continue or type 'quit to exit.");    
+                Console.WriteLine("\nPress Enter to continue or type 'quit' to exit.");
+
+
+
             }
+
 
         }
     }

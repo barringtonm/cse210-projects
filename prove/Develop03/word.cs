@@ -4,20 +4,32 @@ namespace DailyScripture
 {
   class Word
     {
-    public string  Text {get; }
-    public bool IsHidden {get; private set; }
+        private string _text; 
+        private bool _IsHidden; 
 
-    public Word(string text)
+        public Word(string text)
         {
-            text =text;
-            IsHidden = false;
+          this._text =text;
+            _IsHidden = false;
         }
 
-    public void Hide() 
+        public void Hide() 
         {
-            IsHidden = true;
+            _IsHidden = true;
         }
+        public string  GetText()
+        { 
+            return _text;
+        }
+
+        public bool IsHidden()
+        {
+            return _IsHidden;
+        }
+
+
     }
+
     
 
 }
