@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Threading;
 
 //Main Program
+
+
 public class Program
-{
-    public static void Main(string[] args)
     {
+        public static void Main(string[] args)
+        {
+
         Console.WriteLine("Welcome to the Activity App!");
 
         while (true)
@@ -30,7 +33,7 @@ public class Program
                     activity = new BreathingActivity();
                     break;
                     case "2":
-                    activity = new ReflectingActivity();
+                    activity = new ReflectionActivity();
                     break;
                     case "3":
                     activity = new ListingActivity();
@@ -49,12 +52,11 @@ public class Program
     
             Console.WriteLine();
        }
-
-
-
-
     }
 
+
+
+      
 
 
       

@@ -23,12 +23,9 @@ public class ReflectionActivity : Activity
         "How can you keep this experience in mind in the future?"
     };
 
-    public ReflectionActivity():base(" Reflection Activity", "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspect of your life.\r\n ") 
-        {
-       
-
-        }
-
+    public ReflectionActivity():base(" ReflectionActivity", "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspect of your life.") 
+    {
+    }
     public override void Start()
     {
         Console.WriteLine($"Starting {name}...");
@@ -36,31 +33,36 @@ public class ReflectionActivity : Activity
         SetDuration();
         Console.WriteLine("Get ready ...");
         Pause(3);
-        PerformActivity(this);
+        
+        { 
         Console.WriteLine("Good job!");
-        console.WriteLine($"You have completd {name} for {duration} seconds.");
+        Console.WriteLine($"You have completed {name} for {duration} seconds.");
         Pause(3);
+        }
 
-        Private  PerformActivity()
+    }
+
+        private void  PeformActivity()
         {
             Random random = new Random();
             int remainingSeconds = duration;
 
-            while (remainingSeconds > 0) 
+        while (remainingSeconds > 0)
             {
-                string prompt =prompts[random.Next(propmts.Length)];
-                Console.WriteLine(prompt);
-                ShowSpinner(3);
+            string prompt = prompts[random.Next(prompts.Length)];
+            Console.WriteLine(prompt);
+                showSpinner(3);
 
-                foreach (string question in @this.questions)
-                {
-                    Console.WriteLine(question);
-                    ShowSpinner(3);
-                }
-                remainingSeconds-= 30;
-            }
-        
+            foreach (string question in questions) 
+            {
+                Console.WriteLine(question);
+            
+                 showSpinner(3);
+            }   
+            remainingSeconds -= 30;
+          }
+
         }
-    }
 
-}
+}             
+ 

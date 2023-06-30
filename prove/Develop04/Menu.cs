@@ -1,12 +1,12 @@
 using System;
-//using System.Collections.Generic;
-//using System.Threading;
+using System.Collections.Generic;
+using System.Threading;
 
 //Base class
 public abstract class Activity 
 {
     protected string name;
-    public string description;
+    protected string description;
     protected int duration;
 
 
