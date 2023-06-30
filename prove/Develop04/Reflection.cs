@@ -47,20 +47,20 @@ public class ReflectionActivity : Activity
             Random random = new Random();
             int remainingSeconds = duration;
 
-        while (remainingSeconds > 0)
+            while (remainingSeconds > 0)
             {
-            string prompt = prompts[random.Next(prompts.Length)];
+             string prompt = prompts[random.Next(prompts.Length)];
             Console.WriteLine(prompt);
                 showSpinner(3);
 
-            foreach (string question in questions) 
-            {
+                foreach (string question in questions) 
+                {
                 Console.WriteLine(question);
-            
+
                  showSpinner(3);
-            }   
-            remainingSeconds -= 30;
-          }
+                }
+                 remainingSeconds -= 30;
+            }
 
         }
 

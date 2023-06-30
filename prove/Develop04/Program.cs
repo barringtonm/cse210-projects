@@ -5,15 +5,15 @@ using System.Threading;
 //Main Program
 
 
-public class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
 
-        Console.WriteLine("Welcome to the Activity App!");
+            Console.WriteLine("Welcome to the Activity App!");
 
-        while (true)
-        {
+            while (true)
+            {
             Console.WriteLine("Please choose an activity :");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflecting Activity");
@@ -32,31 +32,31 @@ public class Program
                 case "1":
                     activity = new BreathingActivity();
                     break;
-                    case "2":
+                case "2":
                     activity = new ReflectionActivity();
                     break;
-                    case "3":
+                case "3":
                     activity = new ListingActivity();
                     break;
-                    case "4":
+                case "4":
                     Console.WriteLine("Thank you for using the Activity App. Goodbye!");
                     return;
-                    default:
+                default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     Console.WriteLine();
                     continue;
             }
 
-            activity.Start();
+                activity.Start();
+
+
+                Console.WriteLine();
+        }
+    }    
 
     
-            Console.WriteLine();
-       }
-    }
 
 
-
-      
 
 
       
