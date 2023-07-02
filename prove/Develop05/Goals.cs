@@ -1,15 +1,28 @@
 using System;
-
-class Goals
+public class Goals
 {
 
-public string _GoalName;
-public int _points;
+    private string _goalName;
+    public int _menuOptions;
 
-public string _status;        
+    public Goals(string _goalName, string menuOptions)
+    {
+        _goalName = goalName;
+        _menuOptions = menuOptions;
+    }  
+    public string Goals.GetGoalsName() 
+    {
+        return _goalName;
+    }
 
-
-public Goals
+    public string GetmenuOptions()
+     {
+        return _menuOptions;
+    }
+     public string GetSummary()
+     {
+        return _goalName + "-" + _menuOptions;
+     }
 
 }
 
