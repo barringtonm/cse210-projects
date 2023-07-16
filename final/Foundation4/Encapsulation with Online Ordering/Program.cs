@@ -1,4 +1,6 @@
 using System;
+using.Systems.Collection.Generic;
+
 
 class Program
 {
@@ -13,6 +15,14 @@ class Program
         product._shippingLabel =" ";
 
 
+        PackingLabel();
+
+        ShippingLabel();
+
+        priceOfProduct();
+
+        USAAddress(),{ return};
+        AddressNotUSA(Console.Out);
 
 
 
@@ -23,11 +33,6 @@ class Program
 
 
 
-
-
-
-
-
-       // Console.WriteLine(" ");
+       
     }
 } 

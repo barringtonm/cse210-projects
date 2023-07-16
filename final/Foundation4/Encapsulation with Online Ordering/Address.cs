@@ -4,16 +4,16 @@ class Address
  public string _streetAddress;
  public string _city;
  public string _stateOrProvince;
-
+ public string _zipCode;
 
     public AddressNotUSA() 
     {
     return;
     }
 
-    Address() 
+    public USAAddress() 
     {
-        Console.WriteLine($"Address: " {_streetAddress}, {_city}, {_stateOrProvince});
+        //Console.WriteLine($"Address:  {streetAddress}, {city}, {stateOrProvince}, {zipCode });
     }
 
 }
