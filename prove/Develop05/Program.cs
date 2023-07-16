@@ -4,35 +4,52 @@ class Program
     static void Main(string[] args)
     {
         Menu menu= new Menu();
-        List<string> list= new List<string> 
+        List<string> list= new List<string> ();
         {
-            "Menu Options:"
+        
+            "Menu Options: "",
             "1.Create New Goal",
             "2.List Goals",
             "3.Save Goals",
             "4.Load Goals",
             "5.Record Event",
-            "6. Quit",
+            "6. Quit"    
+
+    
             
 
-        };
-        bool quit = false;
+        
+             bool quit = false;
+         }    
+
+
 
         while (!quit) 
         {
             Console.WriteLine("\n Welcome to the Eternal Quest program");
+
             Console.WriteLine("Select a choice from the menu: ");
+
             Console.WriteLine("1.Create New Goal");
+
             Console.WriteLine("2.List Goals");
+
             Console.WriteLine("3.Save Goals");
+
             Console.WriteLine("4.Load Goals");
+
             Console.WriteLine("5.Record Event");
+
             Console.WriteLine("6.Quit");
             
             Console.WriteLine("\nWhat would you like to do? ");
+
+        }
+
+
             string choice = ConstructorBuilder.ReadLine();
 
-            createGoal(simpleGoals, eternalgoals);
+            createGoal(simpleGoals, eternalgoals)
 
             {
                Console.WriteLine($" simpleGoals=10 points, eternalGoals=100 points");
@@ -58,7 +75,7 @@ class Program
             }
 
 
-        }
+        
             Console.WriteLine("Welcome to the program!");
 
             switch (choice) 
