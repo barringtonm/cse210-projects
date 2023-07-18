@@ -1,5 +1,5 @@
 using System;
-namespace Foundation4E 
+namespace Foundation4I
 {
     class Program
     {
@@ -41,7 +41,7 @@ namespace Foundation4E
 
             shortDescriptionEvent.date();
             {
-                Console.WriteLine("The AI Lecture is a Workshop course facilitated by John Artificial Intelligence is on Feburuary 10, 2025.")
+                object value = Console.WriteLine("The AI Lecture is a Workshop course facilitated by John Artificial Intelligence is on Feburuary 10, 2025.");
             }
 
 

@@ -1,7 +1,10 @@
-using System;
+/*using System;
 class Program
 {
-    static void Main(string[] args)
+    private const bool V = false;
+    private const int V1 = 6;
+
+    static void Main(string[] args, bool quit)
     {
         Menu menu= new Menu();
         List<string> list= new List<string> ();
@@ -16,13 +19,7 @@ class Program
             "6. Quit"    
 
     
-            
-
-        
-             bool quit = false;
-         }    
-
-
+        }
 
         while (!quit) 
         {
@@ -117,3 +114,4 @@ class Program
 
 
 }
+*/

@@ -1,5 +1,5 @@
 using System;
-namespace Foundation4E
+namespace Foundation4I
 {
     public class Lectures : Event //Derived class
     {

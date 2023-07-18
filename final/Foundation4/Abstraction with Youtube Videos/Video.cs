@@ -1,14 +1,31 @@
 using System;
 using System.Collections.Generic;
-namespace foundationfour
+namespace foundationfourA
 {
     public class Video 
     {
-         public string _name;
-         public string _author;
-         public int _durationInSeconds; 
+         public string _name{get;set;}
+         public string _author{get; set;}
+         public int _durationInSeconds{get; set;}
 
+        private List<Comment> comments;
+        public Video(string _videoTitle, string _author, int _durationInSeconds)
+        {
+            _videoTitle = videoTitle;
+            _author = author;
+            _durationInSeconds = durationInSeconds;
 
+        }
+
+        public void  AddComment(Comment comment)
+        {
+            comments.Add(comment); 
+        }
+
+        public int GetNumberOFComments() 
+        {
+            return comments.Count;
+        }
 
 
         public void TrackVideoTitle  (string name)

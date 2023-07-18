@@ -1,10 +1,15 @@
 using System;
-class Customer
+namespace Foundation4Encap 
 {
- public string _name;
+    class Customer
+    {
+        public string _name;
 
 
-public string _Address;
+        public string _Address;
  
+    }
+
+
 }
 

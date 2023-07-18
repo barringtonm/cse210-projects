@@ -14,14 +14,17 @@ class Order
     public string _shippingState;
     public string _shippingZipCode;
     public string _shippingCost;
-    //public int  _usaShippingCost;
-    public int _nonUSAShippingCost;
+    public int  _usaShippingCost;
+    
+    ShippingCost() 
+    {
+
+    }    
 
 
-
-        //static void Order.shippingAddresss( customerName, shippingCity, shipping_Region, shippingPostalCode,shippingState,shippingZipCode,  shippingCountry )
+    static void Order.shippingAddresss(  )
     { 
-        //Console.WriteLine(shippingAddresss)
+        Console.WriteLine(shippingAddresss);
     }
 
 
@@ -34,7 +37,7 @@ class Order
 
         private List<Customers> customers = new List<Customers>();
 
-       foreach(string _name, string _productsId, string _customers, string _price, string _shippingLabel, string _shippingAddress, string _shippingCity, string _shippingRegion, string _)
+       foreach()
         {
 
        // Console.WriteLine($"Name : {_name} {_shippingAddress}");

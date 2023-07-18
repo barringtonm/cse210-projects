@@ -1,22 +1,26 @@
-using Internal;
 using System;
-namespace foundationfour 
+using System.Collections.Generic;
+namespace foundationfourA 
 {
         public class Comment 
         {
-           public string _nameOfPerson;
-           public string _text;
+           public string _nameOfPerson{get;set;}
+           public string _text{get; set;}
 
-
+            public Comment(string _text, string _nameOfPerson) 
+            {
+                _nameOfPerson = nameOfPerson;
+                _text = text;
+            }
 
                public void TrackNameOfPerson()
                 {
-                    _nameOfPerson = "";
+                    _nameOfPerson = "nameOfPerson";
                 }
 
                 public void TrackText()
                 {
-                      _text = "";
+                      _text = text;
                 }
 
               

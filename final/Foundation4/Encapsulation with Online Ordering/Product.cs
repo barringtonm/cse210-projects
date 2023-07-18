@@ -1,45 +1,46 @@
 using System;
-using System.Reflection.Metadata.Ecma335;
-
-class Product
+namespace Foundation4Encap
 {
-   private string _name;
-   private string _product;
-   private string _price;
-   private int _quantity;
-
-   public string _shippingLabel;
-   public string _ProductName;
-
-    QuantityOfProduct()
+        class Product
     {
-        List<Product> products = new List<Product>();
-        Console.WriteLine("\nQuantity : {0}, products.Quantity");
+        private string _name;
+        private string _product;
+        private string _price;
+        private int _quantity;
 
-        products.Add( new product() { _ProductName = "Music box",ProductId = 1234});
-        products.Add(new product() { _ProductName = "Dining table", ProductId = 1334 });
-        products.Add(new product() { _ProductName = "Dining chairs", ProductId = 1434 });
-        products.Add(new product() { _ProductName = "Table cloth", ProductId = 1634 });
+        public string _shippingLabel;
+        public string _ProductName;
 
-        Console.WriteLine();
-        foreach (var item in products)
+        QuantityOfProduct()
         {
-            Console.WriteLine(item);   
-        }
+            List<Product> products = new List<Product>();
+            Console.WriteLine("\nQuantity : {0}, products.Quantity");
 
-        Console.WriteLine("\nQuantity: {0}", products.Quantity);
-        Console.WriteLine("\nCount: {0}", products.Count);
+            products.Add( new product() { _ProductName = "Music box",ProductId = 1234});
+            products.Add(new product() { _ProductName = "Dining table", ProductId = 1334 });
+            products.Add(new product() { _ProductName = "Dining chairs", ProductId = 1434 });
+            products.Add(new product() { _ProductName = "Table cloth", ProductId = 1634 });
+
+            Console.WriteLine();
+            foreach (var item in products)
+            {
+                Console.WriteLine(item);   
+            }
+
+            Console.WriteLine("\nQuantity: {0}", products.Quantity);
+            Console.WriteLine("\nCount: {0}", products.Count);
 
 
 
 
-        
+            
 
-    }    
+        }    
 
-         public void priceOfProduct()
-         {
-        priceOfProduct = _price * _QuantityOfProduct;
-        return;
-         } 
-}   
+            public void priceOfProduct()
+            {
+            priceOfProduct = _price * _QuantityOfProduct;
+            return;
+            } 
+     }   
+}
