@@ -1,6 +1,7 @@
 using System;
-
-public class EternalGoals : Goals
+namespace Development5 
+{
+     public class EternalGoals : Goals
 {
     private string _eternalgoalName;
     public int _menuOptions;
@@ -23,7 +24,9 @@ public class EternalGoals : Goals
     }
         
 
-
-
-
+   
 }
+
+
+
+

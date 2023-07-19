@@ -1,6 +1,10 @@
-/*using System;
-class Program
+using System;
+namespace Development5 
 {
+
+
+        class Program
+    {
     private const bool V = false;
     private const int V1 = 6;
 
@@ -19,7 +23,7 @@ class Program
             "6. Quit"    
 
     
-        }
+        };
 
         while (!quit) 
         {
@@ -113,5 +117,9 @@ class Program
     }
 
 
+    
+
+
+
+
 }
-*/

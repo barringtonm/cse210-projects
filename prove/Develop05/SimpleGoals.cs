@@ -1,7 +1,8 @@
 using System;
-
-public class  SimpleGoals : Goals
-{
+namespace Development5
+ {
+      public class  SimpleGoals : Goals
+   {
     
    private string _simpleGoalName;
    private string _menuOptions;
@@ -22,4 +23,6 @@ public class  SimpleGoals : Goals
 
 
 
-}
+   }
+
+ }

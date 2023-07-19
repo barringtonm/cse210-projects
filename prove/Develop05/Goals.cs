@@ -1,6 +1,9 @@
 using System;
-public class Goals
+
+namespace Development5 
 {
+        public class Goals
+    {
 
     private string _goalName;
     public int _menuOptions;
@@ -24,5 +27,8 @@ public class Goals
         return _goalName + "-" + _menuOptions;
      }
 
-}
+    }
 
+
+
+}

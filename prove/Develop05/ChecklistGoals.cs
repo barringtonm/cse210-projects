@@ -1,11 +1,15 @@
 using System;
-
-class EternalGoals : Goals
+namespace Development5
 {
+       class EternalGoals : Goals
+    {
 
         
 
 
 
 
+    }
+ 
 }
+
