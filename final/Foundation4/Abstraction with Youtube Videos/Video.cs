@@ -4,7 +4,13 @@ namespace foundationfourA
 {
     public class Video 
     {
-         public string _name{get;set;}
+        public Video(string _name, int _durationInSeconds) 
+        {
+          this._name = name;
+         this._durationInSeconds = durationInSeconds;
+   
+        }
+          public string _name{get;set;}
          public string _author{get; set;}
          public int _durationInSeconds{get; set;}
 
@@ -30,7 +36,7 @@ namespace foundationfourA
 
         public void TrackVideoTitle  (string name)
         {
-
+            return name;
         }
     
 
@@ -38,7 +44,7 @@ namespace foundationfourA
 
         public void TrackNameOfAuthor(string name) 
         {
-
+            return _author;
         }
 
         public void trackLengthVideo(int lengthInSeconds)

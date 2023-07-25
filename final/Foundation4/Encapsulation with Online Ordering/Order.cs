@@ -1,77 +1,88 @@
-/*using System;
-class Order
+using System;
+using system.Collections.Generic;
+namespace Foundation4Encap 
 {
-    public string _name;
-    public string _productsId;
-    public string _customerName;
-    public string _price;
-    public string _shippingLabel;
-    public string _shippingAddress;
-    public string _shippingCity;
-    public string _shippingRegion;
-    public string _shippingPostalCode;
-    public string _shippingCountry;
-    public string _shippingState;
-    public string _shippingZipCode;
-    public string _shippingCost;
-    public int  _usaShippingCost;
-    
-    ShippingCost() 
+
+    public class Order
     {
-
-    }    
-
-
-    static void Order.shippingAddresss(  )
-    { 
-        Console.WriteLine(shippingAddresss);
-    }
-
+    private string _customerName;
+    private string _productsName;
+    private string _productid;
+    public decimal _price;
+    private string _shippingLabel;
+    private decimal _totalPrice;
+    private decimal _shippingCost;
 
 
-    ShippingLabel()
-    {
-        Console.WriteLine($" Name and Shipping Address : {_name} {_shippingCity} {_shippingRegion} {_shippingPostalCode} {_shippingState} {_shippingZipCode} {_shippingCountry}");
-
-
-
-        private List<Customers> customers = new List<Customers>();
-
-       foreach()
-        {
-
-       // Console.WriteLine($"Name : {_name} {_shippingAddress}");
-        }
 
     }
 
-
-
-
-        Packinglabel()
-    { 
-
-        Console.WriteLine($"{_name}  );   
-    
-
-
-        private List<Products> products = new List<Product>();
-
-        foreach (string_product in products)
+        public Order (string _customerName,string _productsName, string _productid, decimal _price, string _shippingLabel, decimal _totalPrice, decimal _shippingCost)
         {
-            Console.WriteLine($"string_product + Total cost is: {{(string_product*_price)} + {USAShippingCost}}");
+            this._customerName = _customerName;
+            this._productsName = _productsName;
+            this._productid = _productid;
+            this._price =_price;
+            this._shippingLabel =_shippingLabel;
 
         }
-                else
+        
+        public string _customerName 
         {
-            Console.WriteLine($"(string_product + Total cost is: {{(string_product * _price)} + {_NonUSAShippingCost}}");
+            get{return _customerName;}
+            set{CustomerName = value;}
+        }
+       
+  
+        public string _productName
+        {
+            get{return  _productName;}
+            set{_productName = value;}
+        }
+        
+
+        public string _productid
+        {
+            get{return _productId;}
+            set{_productId = value;}
+        }
+
+        public decimal _price 
+        {
+            get{return _price;}  
+            set{_price =value;}   
+
+        }
+
+         public string _shippingLabel  
+         {
+            get{return _shippingLabel;}
+            set{_shippingLabel = value;}
+         }
+        
+
+        public decimal _totalPrice
+        {
+            get{return _totalPrice;}
+            set{_totalPrice = value;}
+
         }
 
 
-     }
+        public decimal _shippingCost 
+        {
+            get{return _totalPrice;}
+            set{_totalPrice = value;}
+        }
 
 
-   
-}
+        public TotalPrice()
+        {
+            
+        }
 
-*/
+
+
+
+
+}                    
